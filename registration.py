@@ -5,10 +5,10 @@ import time
 print('Версия теста 1.0, для прохождения капчи введите её в командную строку, когда тест приостановится.')
 usermail = input('Введите ваш E-mail для подтверждения регистрации: ')
 
-link = input('Введите адрес инсталляции GeoRITM без http://. Не забудьте про порт: ')
+link = input('Введите адрес инсталляции GeoRITMы. Не забудьте про порт: ')
 browser = webdriver.Chrome()
 browser.implicitly_wait(10)
-browser.get('http:/'+link)
+browser.get(link)
 
 registration = browser.find_element(By.LINK_TEXT, 'Регистрация').click()
 name = browser.find_element(By.NAME, 'fname').send_keys('Test')
