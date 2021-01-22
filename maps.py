@@ -38,9 +38,9 @@ browser = webdriver.Chrome()
 browser.implicitly_wait(15)
 browser.get(link)
 
-browser.find_element(By.NAME, 'login').send_keys('thygaviao@yandex.ru')
-browser.find_element(By.NAME, 'password').send_keys('12345678')
-browser.find_element(By.XPATH, '//*[@id="auth"]/div/div/div[1]/form/div[3]/div/button').click()
+browser.find_element(By.NAME, 'login').send_keys('root')
+browser.find_element(By.NAME, 'password').send_keys('password')
+browser.find_element(By.XPATH, '//*[@id="auth"]/div/div/div[1]/form/div[3]/button').click()
 test_move_map()
 
 browser.find_element(By.XPATH, '//*[@id="page"]/div[3]/div[2]/div[2]/div[1]/div/div/div').click()
