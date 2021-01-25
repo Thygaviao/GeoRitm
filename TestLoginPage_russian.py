@@ -45,7 +45,7 @@ def test_login_page():
     if GRmob == GRmob_example:
         print(f'Надпись "{GRmob_example}" ожиданиям')
     else:
-        print(f'Надпись "{GRmob_example}" сломалась и вместо неё выводится "{GRmob_example}"')
+        print(f'Надпись "{GRmob_example}" сломалась и вместо неё выводится "{GRmob}"')
 
     GRmob_opisanie = browser.find_element(By.XPATH, '//*[@id="auth"]/div/div/div[2]/div[1]/p[3]').text
     if GRmob_opisanie == GRmob_opisanie_example:
