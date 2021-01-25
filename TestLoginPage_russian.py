@@ -91,4 +91,3 @@ def test_login_page():
         print(f'Надпись "{registration_example}" сломалась и вместо неё выводится "{registration}"')
 
     browser.quit()
-test_login_page()
