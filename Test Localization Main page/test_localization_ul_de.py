@@ -134,5 +134,3 @@ def test_buildings_ul():
         if list != name:
             print(f'Список сломался и вместо "{name}" выводится "{list}"')
     browser.quit()
-test_ul_localization()
-test_buildings_ul()
